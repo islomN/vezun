@@ -6,7 +6,7 @@ class TelegramHook{
 
     public $telegram;
     public function init(){
-        file_get_contents(\Yii::getAlias('@frontend/web/').'logging', "asdad");
+        file_put_contents(\Yii::getAlias('@frontend/web/').'logging', "asdad");
         $this->telegram = Telegram::Instance();
         $res = $this->telegram->setWebhook(['url' => \Yii::getAlias("@server")]);
 
