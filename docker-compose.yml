@@ -1,38 +1,52 @@
-version: '3.2'
-
+version: "3.1"
+networks:
+  default:
+    driver: bridge
 services:
+#    apache:
+#        networks:
+#            - default
+#        build:
+#            context: .
+#            dockerfile: ./Dockerfile-apache
+#        container_name: vezun-apache
+#        volumes:
+#            - .:/var/www/html
+#    frontend:
+#        networks:
+#            - default
+#        build:
+#            context: .
+#            dockerfile: ./Dockerfile-frontend
+#        container_name: vezun-frontend
+#        ports:
+#            - "80:80"
+#        depends_on:
+#            - db
+    app:
+        networks:
+            - default
+        build:
+            context: .
+            dockerfile: ./Dockerfile-app
+        container_name: vezun-app
 
-  frontend:
-    build: frontend
-    ports:
-      - 20080:80
-    volumes:
-      # Re-use local composer cache via host-volume
-      - ~/.composer-docker/cache:/root/.composer/cache:delegated
-      # Mount source-code for development
-      - ./:/app
-
-  backend:
-    build: backend
-    ports:
-      - 21080:80
-    volumes:
-      # Re-use local composer cache via host-volume
-      - ~/.composer-docker/cache:/root/.composer/cache:delegated
-      # Mount source-code for development
-      - ./:/app
-
-  mysql:
-    image: mysql:5.7
-    environment:
-      - MYSQL_ROOT_PASSWORD=verysecret
-      - MYSQL_DATABASE=yii2advanced
-      - MYSQL_USER=yii2advanced
-      - MYSQL_PASSWORD=secret
-
-  #pgsql:
-  #  image: postgres:9.5
-  #  environment:
-  #    - POSTGRES_DB=yii2advanced
-  #    - POSTGRES_USER=yii2advanced
-  #    - POSTGRES_PASSWORD=secret
+        ports:
+            - "80:80"
+        volumes:
+            - .:/var/www/app
+        depends_on:
+            - db
+    db:
+        networks:
+            - default
+        build:
+            context: .
+            dockerfile: ./Dockerfile-db
+        container_name: vezun-db
+        environment:
+            - MYSQL_DATABASE=vezun
+            - MYSQL_USER=root
+            - MYSQL_PASSWORD=123
+            - MYSQL_ROOT_PASSWORD=123
+            - MYSQL_CHARSET=utf8_general_ci

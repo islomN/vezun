@@ -56,13 +56,19 @@ AppAsset::register($this);
     ]);
     NavBar::end();
     ?>
-
-    <div class="container">
-        <?= Breadcrumbs::widget([
-            'links' => isset($this->params['breadcrumbs']) ? $this->params['breadcrumbs'] : [],
-        ]) ?>
-        <?= Alert::widget() ?>
-        <?= $content ?>
+    <br><br><br>
+    <div class="clearfix"></div>
+    <div class="container-fluid">
+        <div class="col-md-3">
+            <?= \backend\widgets\VertMenuWidget::widget()?>
+        </div>
+        <div class="col-md-9">
+            <?= Breadcrumbs::widget([
+                'links' => isset($this->params['breadcrumbs']) ? $this->params['breadcrumbs'] : [],
+            ]) ?>
+            <?= Alert::widget() ?>
+            <?= $content ?>
+        </div>
     </div>
 </div>
 
