@@ -12,7 +12,7 @@ use yii\filters\VerbFilter;
 /**
  * MessagesController implements the CRUD actions for Messages model.
  */
-class MessagesController extends Controller
+class MessagesController extends BackendController
 {
     /**
      * {@inheritdoc}
@@ -67,6 +67,7 @@ class MessagesController extends Controller
         $model = new Messages();
 
         if ($model->load(Yii::$app->request->post()) && $model->save()) {
+            $model->sendMessageToUsers($user);
             return $this->redirect(['view', 'id' => $model->id]);
         }
 

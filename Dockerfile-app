@@ -17,5 +17,5 @@ RUN apt-get update && \
 RUN docker-php-ext-install -j$(nproc) mysqli pdo_mysql
 
 # Копируем конфигурацию сервера HTTP
-COPY ./server-conf/frontend-default.conf /etc/apache2/sites-available/
+COPY ./server-conf/000-default.conf /etc/apache2/sites-available/
 COPY ./server-conf/backend-default.conf /etc/apache2/sites-available/

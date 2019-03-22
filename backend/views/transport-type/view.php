@@ -6,7 +6,7 @@ use yii\widgets\DetailView;
 /* @var $this yii\web\View */
 /* @var $model common\models\TransportType */
 
-$this->title = $model->name;
+$this->title = $model->name_uz;
 $this->params['breadcrumbs'][] = ['label' => 'Transport Types', 'url' => ['index']];
 $this->params['breadcrumbs'][] = $this->title;
 \yii\web\YiiAsset::register($this);
@@ -30,7 +30,9 @@ $this->params['breadcrumbs'][] = $this->title;
         'model' => $model,
         'attributes' => [
             'id',
-            'name',
+            'name_ru',
+            'name_uz',
+            'name_oz',
             'position',
         ],
     ]) ?>

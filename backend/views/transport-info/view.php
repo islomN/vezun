@@ -109,7 +109,7 @@ $this->params['breadcrumbs'][] = $this->title;
                     $bot_user = $user->botUser;
 
                     if($bot_user){
-                        $str ="Имя: <a href='".\yii\helpers\Url::to(['/bot-user/view', 'id' => $bot_user->id])."'>".$user->name."</a><br>";
+                        $str ="Имя: <a href='".\yii\helpers\Url::to(['/bot-user/view', 'id' => $bot_user->bot_user_id])."'>".$user->name."</a><br>";
                     }else{
                         $str = "Имя: ".Html::encode($user->name)."<br>";
                     }

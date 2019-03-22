@@ -69,9 +69,10 @@ class TransportInfo extends \yii\db\ActiveRecord
         ];
     }
 
-    public function beforeDelete()
+    public function afterDelete()
     {
         $to_map = $this->toMap;
+
         if($to_map){
             $to_map->delete();
         }
@@ -178,5 +179,15 @@ class TransportInfo extends \yii\db\ActiveRecord
         }else{
             return $this->fromMap;
         }
+    }
+
+    public function getWeightInterval(){
+        return $this->hasOne(WeightInterval::class, ['id' => 'weight_interval_id'])
+                    ->via("transportCargoInfo");
+    }
+
+    public function getVolumeInterval(){
+        return $this->hasOne(VolumeInterval::class, ['id' => 'volume_interval_id'])
+            ->via("transportCargoInfo");
     }
 }

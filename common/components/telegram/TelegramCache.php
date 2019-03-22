@@ -40,6 +40,21 @@ class TelegramCache extends BaseObject implements CacheInterface  {
         @unlink(\Yii::getAlias('@telegram_cache_files')."/".$this->chat_id."/".$key);
     }
 
+    public function removeAll($not_remove_files = []){
+        $dir = \Yii::getAlias('@telegram_cache_files')."/".$this->chat_id."/";
+
+        if ($handle = opendir($dir)) {
+
+            while (false !== ($file = readdir($handle))) {
+
+                if(!in_array($file, $not_remove_files)){
+                    @unlink($dir.$file);
+                }
+            }
+
+            closedir($handle);
+        }
+    }
 
     public static function Instance($chat_id){
         if(self::$instance == null){

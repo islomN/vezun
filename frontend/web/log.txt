@@ -1,0 +1,852 @@
+749493022nnArray
+(
+    [update_id] => 322869473
+    [message] => Array
+        (
+            [message_id] => 267
+            [from] => Array
+                (
+                    [id] => 749493022
+                    [is_bot] => 
+                    [first_name] => Ислом
+                    [last_name] => Нурманов
+                    [username] => nurmanovig
+                    [language_code] => ru
+                )
+
+            [chat] => Array
+                (
+                    [id] => 749493022
+                    [first_name] => Ислом
+                    [last_name] => Нурманов
+                    [username] => nurmanovig
+                    [type] => private
+                )
+
+            [date] => 1551105402
+            [text] => /start
+            [entities] => Array
+                (
+                    [0] => Array
+                        (
+                            [offset] => 0
+                            [length] => 6
+                            [type] => bot_command
+                        )
+
+                )
+
+        )
+
+)
+nn749493022nnArray
+(
+    [update_id] => 322869474
+    [message] => Array
+        (
+            [message_id] => 269
+            [from] => Array
+                (
+                    [id] => 749493022
+                    [is_bot] => 
+                    [first_name] => Ислом
+                    [last_name] => Нурманов
+                    [username] => nurmanovig
+                    [language_code] => ru
+                )
+
+            [chat] => Array
+                (
+                    [id] => 749493022
+                    [first_name] => Ислом
+                    [last_name] => Нурманов
+                    [username] => nurmanovig
+                    [type] => private
+                )
+
+            [date] => 1551105428
+            [text] => as
+        )
+
+)
+nn749493022nnArray
+(
+    [update_id] => 322869479
+    [message] => Array
+        (
+            [message_id] => 274
+            [from] => Array
+                (
+                    [id] => 749493022
+                    [is_bot] => 
+                    [first_name] => Ислом
+                    [last_name] => Нурманов
+                    [username] => nurmanovig
+                    [language_code] => ru
+                )
+
+            [chat] => Array
+                (
+                    [id] => 749493022
+                    [first_name] => Ислом
+                    [last_name] => Нурманов
+                    [username] => nurmanovig
+                    [type] => private
+                )
+
+            [date] => 1551105528
+            [text] => s
+        )
+
+)
+nn749493022nnArray
+(
+    [update_id] => 322869475
+    [message] => Array
+        (
+            [message_id] => 270
+            [from] => Array
+                (
+                    [id] => 749493022
+                    [is_bot] => 
+                    [first_name] => Ислом
+                    [last_name] => Нурманов
+                    [username] => nurmanovig
+                    [language_code] => ru
+                )
+
+            [chat] => Array
+                (
+                    [id] => 749493022
+                    [first_name] => Ислом
+                    [last_name] => Нурманов
+                    [username] => nurmanovig
+                    [type] => private
+                )
+
+            [date] => 1551105429
+            [text] => ad
+        )
+
+)
+nn749493022nnArray
+(
+    [update_id] => 322869480
+    [message] => Array
+        (
+            [message_id] => 275
+            [from] => Array
+                (
+                    [id] => 749493022
+                    [is_bot] => 
+                    [first_name] => Ислом
+                    [last_name] => Нурманов
+                    [username] => nurmanovig
+                    [language_code] => ru
+                )
+
+            [chat] => Array
+                (
+                    [id] => 749493022
+                    [first_name] => Ислом
+                    [last_name] => Нурманов
+                    [username] => nurmanovig
+                    [type] => private
+                )
+
+            [date] => 1551105550
+            [text] => adasasd
+        )
+
+)
+nn749493022nnArray
+(
+    [update_id] => 322869476
+    [message] => Array
+        (
+            [message_id] => 271
+            [from] => Array
+                (
+                    [id] => 749493022
+                    [is_bot] => 
+                    [first_name] => Ислом
+                    [last_name] => Нурманов
+                    [username] => nurmanovig
+                    [language_code] => ru
+                )
+
+            [chat] => Array
+                (
+                    [id] => 749493022
+                    [first_name] => Ислом
+                    [last_name] => Нурманов
+                    [username] => nurmanovig
+                    [type] => private
+                )
+
+            [date] => 1551105515
+            [text] => asd
+        )
+
+)
+nn749493022nnArray
+(
+    [update_id] => 322869482
+    [message] => Array
+        (
+            [message_id] => 277
+            [from] => Array
+                (
+                    [id] => 749493022
+                    [is_bot] => 
+                    [first_name] => Ислом
+                    [last_name] => Нурманов
+                    [username] => nurmanovig
+                    [language_code] => ru
+                )
+
+            [chat] => Array
+                (
+                    [id] => 749493022
+                    [first_name] => Ислом
+                    [last_name] => Нурманов
+                    [username] => nurmanovig
+                    [type] => private
+                )
+
+            [date] => 1551105702
+            [text] => asdasd
+        )
+
+)
+nn749493022nnArray
+(
+    [update_id] => 322869481
+    [message] => Array
+        (
+            [message_id] => 276
+            [from] => Array
+                (
+                    [id] => 749493022
+                    [is_bot] => 
+                    [first_name] => Ислом
+                    [last_name] => Нурманов
+                    [username] => nurmanovig
+                    [language_code] => ru
+                )
+
+            [chat] => Array
+                (
+                    [id] => 749493022
+                    [first_name] => Ислом
+                    [last_name] => Нурманов
+                    [username] => nurmanovig
+                    [type] => private
+                )
+
+            [date] => 1551105551
+            [text] => aasd
+        )
+
+)
+nn749493022nnArray
+(
+    [update_id] => 322869485
+    [message] => Array
+        (
+            [message_id] => 280
+            [from] => Array
+                (
+                    [id] => 749493022
+                    [is_bot] => 
+                    [first_name] => Ислом
+                    [last_name] => Нурманов
+                    [username] => nurmanovig
+                    [language_code] => ru
+                )
+
+            [chat] => Array
+                (
+                    [id] => 749493022
+                    [first_name] => Ислом
+                    [last_name] => Нурманов
+                    [username] => nurmanovig
+                    [type] => private
+                )
+
+            [date] => 1551106219
+            [text] => asd
+        )
+
+)
+nn749493022nnArray
+(
+    [update_id] => 322869483
+    [message] => Array
+        (
+            [message_id] => 278
+            [from] => Array
+                (
+                    [id] => 749493022
+                    [is_bot] => 
+                    [first_name] => Ислом
+                    [last_name] => Нурманов
+                    [username] => nurmanovig
+                    [language_code] => ru
+                )
+
+            [chat] => Array
+                (
+                    [id] => 749493022
+                    [first_name] => Ислом
+                    [last_name] => Нурманов
+                    [username] => nurmanovig
+                    [type] => private
+                )
+
+            [date] => 1551105704
+            [text] => aaaaaaa
+        )
+
+)
+nn749493022nnArray
+(
+    [update_id] => 322869478
+    [message] => Array
+        (
+            [message_id] => 273
+            [from] => Array
+                (
+                    [id] => 749493022
+                    [is_bot] => 
+                    [first_name] => Ислом
+                    [last_name] => Нурманов
+                    [username] => nurmanovig
+                    [language_code] => ru
+                )
+
+            [chat] => Array
+                (
+                    [id] => 749493022
+                    [first_name] => Ислом
+                    [last_name] => Нурманов
+                    [username] => nurmanovig
+                    [type] => private
+                )
+
+            [date] => 1551105528
+            [text] => ass
+        )
+
+)
+nn749493022nnArray
+(
+    [update_id] => 322869477
+    [message] => Array
+        (
+            [message_id] => 272
+            [from] => Array
+                (
+                    [id] => 749493022
+                    [is_bot] => 
+                    [first_name] => Ислом
+                    [last_name] => Нурманов
+                    [username] => nurmanovig
+                    [language_code] => ru
+                )
+
+            [chat] => Array
+                (
+                    [id] => 749493022
+                    [first_name] => Ислом
+                    [last_name] => Нурманов
+                    [username] => nurmanovig
+                    [type] => private
+                )
+
+            [date] => 1551105516
+            [text] => ads
+        )
+
+)
+nn749493022nnArray
+(
+    [update_id] => 322869484
+    [message] => Array
+        (
+            [message_id] => 279
+            [from] => Array
+                (
+                    [id] => 749493022
+                    [is_bot] => 
+                    [first_name] => Ислом
+                    [last_name] => Нурманов
+                    [username] => nurmanovig
+                    [language_code] => ru
+                )
+
+            [chat] => Array
+                (
+                    [id] => 749493022
+                    [first_name] => Ислом
+                    [last_name] => Нурманов
+                    [username] => nurmanovig
+                    [type] => private
+                )
+
+            [date] => 1551106219
+            [text] => asdasd
+        )
+
+)
+nn749493022nnArray
+(
+    [update_id] => 322869486
+    [message] => Array
+        (
+            [message_id] => 281
+            [from] => Array
+                (
+                    [id] => 749493022
+                    [is_bot] => 
+                    [first_name] => Ислом
+                    [last_name] => Нурманов
+                    [username] => nurmanovig
+                    [language_code] => ru
+                )
+
+            [chat] => Array
+                (
+                    [id] => 749493022
+                    [first_name] => Ислом
+                    [last_name] => Нурманов
+                    [username] => nurmanovig
+                    [type] => private
+                )
+
+            [date] => 1551106459
+            [text] => asd
+        )
+
+)
+nn749493022nnArray
+(
+    [update_id] => 322869487
+    [message] => Array
+        (
+            [message_id] => 282
+            [from] => Array
+                (
+                    [id] => 749493022
+                    [is_bot] => 
+                    [first_name] => Ислом
+                    [last_name] => Нурманов
+                    [username] => nurmanovig
+                    [language_code] => ru
+                )
+
+            [chat] => Array
+                (
+                    [id] => 749493022
+                    [first_name] => Ислом
+                    [last_name] => Нурманов
+                    [username] => nurmanovig
+                    [type] => private
+                )
+
+            [date] => 1551106465
+            [text] => asdasd
+        )
+
+)
+nn749493022nnArray
+(
+    [update_id] => 322869488
+    [message] => Array
+        (
+            [message_id] => 283
+            [from] => Array
+                (
+                    [id] => 749493022
+                    [is_bot] => 
+                    [first_name] => Ислом
+                    [last_name] => Нурманов
+                    [username] => nurmanovig
+                    [language_code] => ru
+                )
+
+            [chat] => Array
+                (
+                    [id] => 749493022
+                    [first_name] => Ислом
+                    [last_name] => Нурманов
+                    [username] => nurmanovig
+                    [type] => private
+                )
+
+            [date] => 1551106475
+            [text] => asd
+        )
+
+)
+nn749493022nnArray
+(
+    [update_id] => 322869489
+    [message] => Array
+        (
+            [message_id] => 285
+            [from] => Array
+                (
+                    [id] => 749493022
+                    [is_bot] => 
+                    [first_name] => Ислом
+                    [last_name] => Нурманов
+                    [username] => nurmanovig
+                    [language_code] => ru
+                )
+
+            [chat] => Array
+                (
+                    [id] => 749493022
+                    [first_name] => Ислом
+                    [last_name] => Нурманов
+                    [username] => nurmanovig
+                    [type] => private
+                )
+
+            [date] => 1551106493
+            [text] => asd
+        )
+
+)
+nn749493022nnArray
+(
+    [update_id] => 322869490
+    [message] => Array
+        (
+            [message_id] => 287
+            [from] => Array
+                (
+                    [id] => 749493022
+                    [is_bot] => 
+                    [first_name] => Ислом
+                    [last_name] => Нурманов
+                    [username] => nurmanovig
+                    [language_code] => ru
+                )
+
+            [chat] => Array
+                (
+                    [id] => 749493022
+                    [first_name] => Ислом
+                    [last_name] => Нурманов
+                    [username] => nurmanovig
+                    [type] => private
+                )
+
+            [date] => 1551106509
+            [text] => asd
+        )
+
+)
+nn749493022nnArray
+(
+    [update_id] => 322869491
+    [message] => Array
+        (
+            [message_id] => 289
+            [from] => Array
+                (
+                    [id] => 749493022
+                    [is_bot] => 
+                    [first_name] => Ислом
+                    [last_name] => Нурманов
+                    [username] => nurmanovig
+                    [language_code] => ru
+                )
+
+            [chat] => Array
+                (
+                    [id] => 749493022
+                    [first_name] => Ислом
+                    [last_name] => Нурманов
+                    [username] => nurmanovig
+                    [type] => private
+                )
+
+            [date] => 1551106512
+            [text] => a
+        )
+
+)
+nn749493022nnArray
+(
+    [update_id] => 322869492
+    [message] => Array
+        (
+            [message_id] => 291
+            [from] => Array
+                (
+                    [id] => 749493022
+                    [is_bot] => 
+                    [first_name] => Ислом
+                    [last_name] => Нурманов
+                    [username] => nurmanovig
+                    [language_code] => ru
+                )
+
+            [chat] => Array
+                (
+                    [id] => 749493022
+                    [first_name] => Ислом
+                    [last_name] => Нурманов
+                    [username] => nurmanovig
+                    [type] => private
+                )
+
+            [date] => 1551106625
+            [text] => asd
+        )
+
+)
+nnnnnn749493022nnArray
+(
+    [update_id] => 322869529
+    [message] => Array
+        (
+            [message_id] => 399
+            [from] => Array
+                (
+                    [id] => 749493022
+                    [is_bot] => 
+                    [first_name] => Ислом
+                    [last_name] => Нурманов
+                    [username] => nurmanovig
+                    [language_code] => ru
+                )
+
+            [chat] => Array
+                (
+                    [id] => 749493022
+                    [first_name] => Ислом
+                    [last_name] => Нурманов
+                    [username] => nurmanovig
+                    [type] => private
+                )
+
+            [date] => 1551553664
+            [text] => aasd
+        )
+
+)
+nn749493022nnArray
+(
+    [update_id] => 322869530
+    [message] => Array
+        (
+            [message_id] => 402
+            [from] => Array
+                (
+                    [id] => 749493022
+                    [is_bot] => 
+                    [first_name] => Ислом
+                    [last_name] => Нурманов
+                    [username] => nurmanovig
+                    [language_code] => ru
+                )
+
+            [chat] => Array
+                (
+                    [id] => 749493022
+                    [first_name] => Ислом
+                    [last_name] => Нурманов
+                    [username] => nurmanovig
+                    [type] => private
+                )
+
+            [date] => 1551553669
+            [text] => sdf
+        )
+
+)
+nn749493022nnArray
+(
+    [update_id] => 322869541
+    [message] => Array
+        (
+            [message_id] => 418
+            [from] => Array
+                (
+                    [id] => 749493022
+                    [is_bot] => 
+                    [first_name] => Ислом
+                    [last_name] => Нурманов
+                    [username] => nurmanovig
+                    [language_code] => ru
+                )
+
+            [chat] => Array
+                (
+                    [id] => 749493022
+                    [first_name] => Ислом
+                    [last_name] => Нурманов
+                    [username] => nurmanovig
+                    [type] => private
+                )
+
+            [date] => 1551554381
+            [text] => asd
+        )
+
+)
+nn749493022nnArray
+(
+    [update_id] => 322869538
+    [message] => Array
+        (
+            [message_id] => 415
+            [from] => Array
+                (
+                    [id] => 749493022
+                    [is_bot] => 
+                    [first_name] => Ислом
+                    [last_name] => Нурманов
+                    [username] => nurmanovig
+                    [language_code] => ru
+                )
+
+            [chat] => Array
+                (
+                    [id] => 749493022
+                    [first_name] => Ислом
+                    [last_name] => Нурманов
+                    [username] => nurmanovig
+                    [type] => private
+                )
+
+            [date] => 1551554301
+            [text] => 3
+        )
+
+)
+nn749493022nnArray
+(
+    [update_id] => 322869539
+    [message] => Array
+        (
+            [message_id] => 416
+            [from] => Array
+                (
+                    [id] => 749493022
+                    [is_bot] => 
+                    [first_name] => Ислом
+                    [last_name] => Нурманов
+                    [username] => nurmanovig
+                    [language_code] => ru
+                )
+
+            [chat] => Array
+                (
+                    [id] => 749493022
+                    [first_name] => Ислом
+                    [last_name] => Нурманов
+                    [username] => nurmanovig
+                    [type] => private
+                )
+
+            [date] => 1551554303
+            [text] => 123132
+        )
+
+)
+nn749493022nnArray
+(
+    [update_id] => 322869540
+    [message] => Array
+        (
+            [message_id] => 417
+            [from] => Array
+                (
+                    [id] => 749493022
+                    [is_bot] => 
+                    [first_name] => Ислом
+                    [last_name] => Нурманов
+                    [username] => nurmanovig
+                    [language_code] => ru
+                )
+
+            [chat] => Array
+                (
+                    [id] => 749493022
+                    [first_name] => Ислом
+                    [last_name] => Нурманов
+                    [username] => nurmanovig
+                    [type] => private
+                )
+
+            [date] => 1551554305
+            [text] => 0000000000
+        )
+
+)
+nn749493022nnArray
+(
+    [update_id] => 322869542
+    [message] => Array
+        (
+            [message_id] => 427
+            [from] => Array
+                (
+                    [id] => 749493022
+                    [is_bot] => 
+                    [first_name] => Ислом
+                    [last_name] => Нурманов
+                    [username] => nurmanovig
+                    [language_code] => ru
+                )
+
+            [chat] => Array
+                (
+                    [id] => 749493022
+                    [first_name] => Ислом
+                    [last_name] => Нурманов
+                    [username] => nurmanovig
+                    [type] => private
+                )
+
+            [date] => 1551554437
+            [text] => assssssss
+        )
+
+)
+nn749493022nnArray
+(
+    [update_id] => 322869543
+    [message] => Array
+        (
+            [message_id] => 430
+            [from] => Array
+                (
+                    [id] => 749493022
+                    [is_bot] => 
+                    [first_name] => Ислом
+                    [last_name] => Нурманов
+                    [username] => nurmanovig
+                    [language_code] => ru
+                )
+
+            [chat] => Array
+                (
+                    [id] => 749493022
+                    [first_name] => Ислом
+                    [last_name] => Нурманов
+                    [username] => nurmanovig
+                    [type] => private
+                )
+
+            [date] => 1551554441
+            [text] => 13
+        )
+
+)
+nnnnnn

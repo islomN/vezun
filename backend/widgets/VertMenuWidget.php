@@ -44,6 +44,12 @@ class VertMenuWidget extends Widget {
                 'url' => Url::to('/region'),
                 'controller' => 'region',
             ],
+            [
+                'text' => 'Ключевые слова',
+                'url' => Url::to('/letter'),
+                'controller' => 'letter',
+            ],
+
 
 
         ];

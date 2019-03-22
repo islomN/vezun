@@ -87,7 +87,7 @@ class CargoInfo extends \yii\db\ActiveRecord
         ];
     }
 
-    public function beforeDelete()
+    public function afterDelete()
     {
         $to_map = $this->toMap;
         if($to_map){

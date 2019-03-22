@@ -48,6 +48,12 @@ class CargoUserInfo extends \yii\db\ActiveRecord
         ];
     }
 
+    public function beforeDelete()
+    {
+        BotUserInfo::deleteAll(['user_info_id' => $this->id]);
+        return parent::beforeDelete();
+    }
+
     /**
      * @return \yii\db\ActiveQuery
      */

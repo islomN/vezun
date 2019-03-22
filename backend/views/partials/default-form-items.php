@@ -2,7 +2,7 @@
 <hr>
 <h3>Погрузка</h3>
 <?php $from_map = $model->model->getFromMapOrNew();?>
-<?= $form->field($model, 'from_country_id', ['options' => ['class' => 'col-md-4']])
+<?= $form->field($model, 'from_country_id', ['options' => ['class' => 'col-md-6']])
     ->dropDownList($from_map->getCountryList(),
         [
             'class' => 'from-country form-control',
@@ -11,7 +11,7 @@
             ]
         ]
     ) ?>
-<?= $form->field($model, 'from_region_id', ['options' => ['class' => 'col-md-4']])
+<?= $form->field($model, 'from_region_id', ['options' => ['class' => 'col-md-6']])
     ->dropDownList($from_map->getRegionList(),
         [
             'class' => 'from-region inner-from-country form-control',
@@ -20,21 +20,21 @@
             ]
         ]
     ) ?>
-<?= $form->field($model, 'from_city_id', ['options' => ['class' => 'col-md-4']])
-    ->dropDownList($from_map->getCityList(),
-        [
-            'class' => 'from-city inner-from-region inner-from-country form-control',
-            'options' => [
-                $from_map->city_id => ['selected' => true],
-            ]
-        ]
-        ) ?>
+<?//= $form->field($model, 'from_city_id', ['options' => ['class' => 'col-md-6']])
+//    ->dropDownList($from_map->getCityList(),
+//        [
+//            'class' => 'from-city inner-from-region inner-from-country form-control',
+//            'options' => [
+//                $from_map->city_id => ['selected' => true],
+//            ]
+//        ]
+//        ) ?>
 <hr>
 
 <hr>
 <h3>Выгрузка</h3>
 <?php $to_map = $model->model->getToMapOrNew();?>
-<?= $form->field($model, 'to_country_id', ['options' => ['class' => 'col-md-4']])
+<?= $form->field($model, 'to_country_id', ['options' => ['class' => 'col-md-6']])
     ->dropDownList($to_map->getCountryList(),
         [
             'class' => 'to-country form-control',
@@ -43,7 +43,7 @@
             ]
         ]
         ) ?>
-<?= $form->field($model, 'to_region_id', ['options' => ['class' => 'col-md-4']])
+<?= $form->field($model, 'to_region_id', ['options' => ['class' => 'col-md-6']])
     ->dropDownList($to_map->getRegionList(),
         [
             'class' => 'to-region inner-from-country form-control',
@@ -52,15 +52,15 @@
             ]
         ]
         ) ?>
-<?= $form->field($model, 'to_city_id', ['options' => ['class' => 'col-md-4']])
-    ->dropDownList($to_map->getCityList(),
-        [
-            'class' => 'to-city inner-to-region inner-to-country form-control',
-            'options' => [
-                $to_map->city_id => ['selected' => true],
-            ]
-        ]
-        ) ?>
+<?//= $form->field($model, 'to_city_id', ['options' => ['class' => 'col-md-4']])
+//    ->dropDownList($to_map->getCityList(),
+//        [
+//            'class' => 'to-city inner-to-region inner-to-country form-control',
+//            'options' => [
+//                $to_map->city_id => ['selected' => true],
+//            ]
+//        ]
+//        ) ?>
 <hr>
 
 <?php $dates = $model->model->date;?>
@@ -85,7 +85,7 @@
 
 <?= $form->field($model, 'transport_type_id')
     ->dropDownList(
-        \common\models\TransportType::find()->select('name, id')->orderBy('position desc')->indexBy('id')->column(),
+        \common\models\TransportType::find()->select('name_ru, id')->orderBy('position desc')->indexBy('id')->column(),
         [
             'options' => [
                 $model->model->transport_type_id => ['selected' => true]

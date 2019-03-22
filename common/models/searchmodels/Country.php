@@ -40,7 +40,7 @@ class Country extends CountryModel
      */
     public function search($params)
     {
-        $query = CountryModel::find();
+        $query = CountryModel::find()->orderBy("position desc, name asc");
 
         // add conditions that should always apply here
 

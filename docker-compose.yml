@@ -34,7 +34,7 @@ services:
         ports:
             - "80:80"
         volumes:
-            - .:/var/www/app
+            - .:/var/www/html
         depends_on:
             - db
     db:

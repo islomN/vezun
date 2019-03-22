@@ -18,7 +18,7 @@ class TransportType extends TransportTypeModel
     {
         return [
             [['id', 'position'], 'integer'],
-            [['name'], 'safe'],
+            [['name', 'name_uz', 'name_oz'], 'safe'],
         ];
     }
 
@@ -62,7 +62,7 @@ class TransportType extends TransportTypeModel
             'position' => $this->position,
         ]);
 
-        $query->andFilterWhere(['like', 'name', $this->name]);
+        $query->andFilterWhere(['like', 'name_ru', $this->name_ru]);
 
         return $dataProvider;
     }

@@ -19,7 +19,11 @@
         "yiisoft/yii2-bootstrap": "~2.0.0",
         "yiisoft/yii2-swiftmailer": "~2.0.0 || ~2.1.0",
         "dmstr/yii2-adminlte-asset": "^2.1",
-        "2amigos/yii2-date-picker-widget": "~1.0"
+        "2amigos/yii2-date-picker-widget": "~1.0",
+        "mirkhamidov/yii2-telegram-notifications": "dev-master",
+        "longman/telegram-bot": "^0.55.1",
+        "cyber-duck/laravel-excel": "^1.2",
+        "ext-ctype": "^0.0.0"
     },
     "require-dev": {
         "yiisoft/yii2-debug": "~2.0.0",

@@ -40,7 +40,7 @@ class Region extends RegionModel
      */
     public function search($params)
     {
-        $query = RegionModel::find();
+        $query = RegionModel::find()->orderBy("position desc, name asc");
 
         // add conditions that should always apply here
 

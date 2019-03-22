@@ -123,11 +123,38 @@ class Map extends \yii\db\ActiveRecord
         if($region = $this->region){
             $info[] = $region->name;
         }
-
-        if($city = $this->country){
-            $info[] = $city->name;
-        }
+//
+//        if($city = $this->city){
+//            $info[] = $city->name;
+//        }
 
         return implode(", ", $info);
+    }
+
+    public function getCountryName(){
+        if($country = $this->country){
+            return $country->name;
+        }
+
+        return null;
+    }
+
+    public function getRegionName(){
+        if($region = $this->region){
+            return $region->name;
+        }
+
+        return null;
+    }
+
+    public static function getInfo($country_id, $region_id = null){
+        $country = Country::findOne($country_id);
+
+        if($region_id){
+            $region = Region::findOne($region_id);
+            $country->name .= ", ".$region->name;
+        }
+
+        return $country->name;
     }
 }

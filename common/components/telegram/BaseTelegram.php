@@ -34,12 +34,11 @@ class BaseTelegram extends \yii\base\Component
     *   ]);
     */
     public function sendMessage(array $option){
-        $chat_id = $option['chat_id'];
-        $text = urlencode($option['text']);
-        unset($option['chat_id']);
-        unset($option['text']);
-        $jsonResponse = $this->curl_call("https://api.telegram.org/bot" . $this->botToken . "/sendMessage?chat_id=".$chat_id
-                .'&text='.$text, $option);
+//        $chat_id = $option['chat_id'];
+//        $text = urlencode($option['text']);
+//        unset($option['chat_id']);
+//        unset($option['text']);
+        $jsonResponse = $this->curl_call("https://api.telegram.org/bot" . $this->botToken . "/sendMessage", $option);
         return json_decode($jsonResponse);
     }
 
@@ -657,22 +656,16 @@ class BaseTelegram extends \yii\base\Component
 
     private function curl_call($url, $option=array(), $headers=array()){
         $attachments = ['photo', 'sticker', 'audio', 'document', 'video'];
-        
-        $ch = curl_init($url);
-        curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, false);
-        curl_setopt($ch, CURLOPT_USERAGENT, "PostManGoBot 1.0");
-        curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
-        if (count($option)) {
-            curl_setopt($ch, CURLOPT_POST, true);
 
-            foreach($attachments as $attachment){
-                if(isset($option[$attachment])){
-                    $option[$attachment] = $this->curlFile($option[$attachment]);
-                    break;
-                }
-            }
-            curl_setopt($ch, CURLOPT_POSTFIELDS, $option); 
-        }
+        $ch = curl_init($url);
+        curl_setopt($ch, CURLOPT_HEADER, false);
+        curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
+        curl_setopt($ch, CURLOPT_POST, 1);
+        curl_setopt($ch, CURLOPT_POSTFIELDS, $option);
+
+        print_r($option);
+
+
         $r = curl_exec($ch);
         if($r == false){
             $text = 'eroror '.curl_error($ch);
@@ -683,5 +676,40 @@ class BaseTelegram extends \yii\base\Component
         curl_close($ch);
         return $r;
     }
+
+
+//    private function curl_call($url, $option=array(), $headers=array()){
+//        $attachments = ['photo', 'sticker', 'audio', 'document', 'video'];
+//
+//        $ch = curl_init($url);
+//
+//
+////        curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, false);
+////        curl_setopt($ch, CURLOPT_USERAGENT, "PostManGoBot 1.0");/**/
+//        curl_setopt($ch, CURLOPT_HEADER, false);
+//        curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
+//
+//        curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
+//        if (count($option)) {
+//            curl_setopt($ch, CURLOPT_POST, true);
+//
+//            foreach($attachments as $attachment){
+//                if(isset($option[$attachment])){
+//                    $option[$attachment] = $this->curlFile($option[$attachment]);
+//                    break;
+//                }
+//            }
+//            curl_setopt($ch, CURLOPT_POSTFIELDS, $option);
+//        }
+//        $r = curl_exec($ch);
+//        if($r == false){
+//            $text = 'eroror '.curl_error($ch);
+//            $myfile = fopen("error_telegram.log", "w") or die("Unable to open file!");
+//            fwrite($myfile, $text);
+//            fclose($myfile);
+//        }
+//        curl_close($ch);
+//        return $r;
+//    }
 
 }

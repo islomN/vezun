@@ -31,7 +31,7 @@ class TransportType extends \yii\db\ActiveRecord
     {
         return [
             [['position'], 'integer'],
-            [['name'], 'string', 'max' => 255],
+            [['name_ru', 'name_uz', 'name_oz'], 'string', 'max' => 255],
         ];
     }
 
@@ -42,7 +42,9 @@ class TransportType extends \yii\db\ActiveRecord
     {
         return [
             'id' => 'ID',
-            'name' => 'Name',
+            'name' => 'Наименование',
+            'name_uz' => 'Nomi',
+            'name_oz' => 'Номи',
             'position' => 'Position',
         ];
     }
@@ -61,5 +63,9 @@ class TransportType extends \yii\db\ActiveRecord
     public function getTransportInfos()
     {
         return $this->hasMany(TransportInfo::className(), ['transport_type_id' => 'id']);
+    }
+
+    public function getName(){
+        return $this->name_ru;
     }
 }

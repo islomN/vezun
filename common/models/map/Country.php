@@ -30,6 +30,7 @@ class Country extends \yii\db\ActiveRecord
     {
         return [
             [['name'], 'string', 'max' => 255],
+            ['position', 'integer']
         ];
     }
 
@@ -59,4 +60,5 @@ class Country extends \yii\db\ActiveRecord
     {
         return $this->hasMany(Regions::className(), ['country_id' => 'id']);
     }
+
 }

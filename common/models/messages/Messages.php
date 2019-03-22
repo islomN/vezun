@@ -2,6 +2,8 @@
 
 namespace common\models\messages;
 
+use common\components\telegram\Telegram;
+use common\models\BotUser;
 use Yii;
 use yii\behaviors\TimestampBehavior;
 use yii\db\ActiveRecord;
@@ -69,5 +71,25 @@ class Messages extends \yii\db\ActiveRecord
     public function getSendMessages()
     {
         return $this->hasMany(SendMessages::className(), ['message_id' => 'id']);
+    }
+
+
+
+    public function sendMessageToUsers($user_id = null){
+        $query = BotUser::find()->select("chat_id");
+
+        if($query){
+            $query->where(['id' => $user_id]);
+        }
+
+        $list = $query->column();
+        ob_start();
+        foreach($list as $chat_id){
+            Telegram::Instance()->sendMessage(['chat_id' => $chat_id, "text" => $this->message]);
+        }
+
+        return ob_get_clean();
+
+
     }
 }
